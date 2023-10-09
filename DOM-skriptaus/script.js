@@ -1,34 +1,56 @@
-    <script>
-        const taskInput = document.getElementById('task-input');
-        const tasksContainer = document.getElementById('tasks');
+<script>
+// Creates a delete button and appends it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
 
-        // Function to add a new task
-        function addTask() {
-            const taskText = taskInput.value.trim();
+// Click on a delete button to hide the current list item
+var close = document.getElementsByClassName("close");
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  };
+}
 
-            if (taskText !== '') {
-                const task = document.createElement('div');
-                task.className = 'task';
-                task.innerHTML = `
-                    <span>${taskText}</span>
-                    <button class="delete-button">Delete</button>
-                `;
+// Adds a checked symbol when clicking on a to-do item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
-                // Add an event listener to delete the task when the button is clicked
-                const deleteButton = task.querySelector('.delete-button');
-                deleteButton.addEventListener('click', () => {
-                    tasksContainer.removeChild(task);
-                });
+// Creates a new to-do item when clicking the add button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
 
-                tasksContainer.appendChild(task);
-                taskInput.value = '';
-            }
-        }
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
 
-        // Add a task when the Enter key is pressed in the input field
-        taskInput.addEventListener('keyup', (event) => {
-            if (event.key === 'Enter') {
-                addTask();
-            }
-        });
-    </script>
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    };
+  }
+}
+</script>
