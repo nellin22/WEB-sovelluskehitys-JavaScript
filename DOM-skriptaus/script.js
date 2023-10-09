@@ -12,12 +12,11 @@ for (i = 0; i < myNodelist.length; i++) {
 
 // Click on a delete button to hide the current list item
 var close = document.getElementsByClassName("close");
-var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-  }
+  };
 }
 
 // Adds a checked symbol when clicking on a to-do item
@@ -27,7 +26,8 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
-// Creates new to-do item when clicking the add button
+
+// Creates a new to-do item when clicking the add button
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -50,7 +50,7 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    };
   }
 }
 </script>
