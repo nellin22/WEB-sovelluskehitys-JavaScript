@@ -5,7 +5,7 @@ ul li {
   cursor: pointer;
   position: relative;
   margin: 0;
-  padding: 15px 20px;
+  padding: 0;
   font-size: 18px
 
 /* makes the list items unselectable */
@@ -32,6 +32,13 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+}
+
+/* Clears floats */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Delete button style */
