@@ -1,10 +1,3 @@
-/* makes the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 /* Header style */
 .header {
   background-color: #E6E6FA;
@@ -47,6 +40,13 @@ ul li {
   position: relative;
   padding: 15px 20px;
   font-size: 18px
+
+/* makes the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 /* When item is clicked on, the text is crossed out */
 ul li.checked {
