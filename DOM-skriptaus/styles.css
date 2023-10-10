@@ -32,6 +32,12 @@ ul li.checked::before {
   height: 15px;
   width: 7px;
 }
+.checkbox {
+  margin-right: 10px;
+        }
+.task.checked {
+  text-decoration: line-through;
+}
 
 /* Clears floats */
 .header:after {
