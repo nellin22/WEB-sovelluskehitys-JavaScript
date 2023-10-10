@@ -24,13 +24,18 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+// Add an event listener to mark/unmark the task as checked
+  const checkbox = task.querySelector('.checkbox');
+  const deleteButton = task.querySelector('.delete-button');
+  const taskTextElement = task.querySelector('span');
+
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      taskTextElement.classList.add('checked');
+        } else {
+          taskTextElement.classList.remove('checked');
+        }
+      });
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
