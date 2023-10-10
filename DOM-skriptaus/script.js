@@ -1,4 +1,3 @@
-<script>
 // Creates a delete button and appends it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -53,4 +52,3 @@ function newElement() {
     };
   }
 }
-</script>
