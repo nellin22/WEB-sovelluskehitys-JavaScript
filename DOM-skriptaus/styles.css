@@ -21,16 +21,16 @@ ul li.checked {
 
 /* When item is clicked on, a checked mark appears  */
 ul li.checked::before {
-  content: '✓';
+  content: '';
   position: absolute;
   border-color: #51414F;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
-  left: 30px;
+  left: 16px;
   transform: rotate(45deg);
-  height: 10px;
-  width: 5px;
+  height: 15px;
+  width: 7px;
 }
 
 /* Clears floats */
