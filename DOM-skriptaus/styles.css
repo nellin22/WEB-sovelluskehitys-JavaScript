@@ -4,6 +4,7 @@ ul li {
   list-style-type: none;
   cursor: pointer;
   position: relative;
+  margin: 0;
   padding: 15px 20px;
   font-size: 18px
 
@@ -47,13 +48,6 @@ ul li.checked::before {
   background-color: #E6E6FA;
   padding: 10px 15px;
   color: #483248;
-}
-
-/* Clears floats */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Input style */
