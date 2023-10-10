@@ -1,6 +1,7 @@
 //save todos to local storage
 function saveToLocalStorage() {
   localStorage.setItem("todos", JSON.stringify(todos));
+  }
 
   // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
