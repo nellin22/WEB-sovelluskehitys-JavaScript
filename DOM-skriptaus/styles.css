@@ -3,7 +3,7 @@ ul li {
   background: #BDB5D5;
   list-style-type: none;
   cursor: pointer;
-  position: left;
+  position: relative;
   padding: 15px 20px;
   font-size: 18px
 
