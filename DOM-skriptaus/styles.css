@@ -2,16 +2,10 @@
 ul li {
   background: #BDB5D5;
   list-style-type: none;
+  cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
   font-size: 18px;
-
-  /* makes the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /* When item is clicked on, the text is crossed out */
 ul li.checked {
@@ -35,14 +29,10 @@ ul li.checked::before {
 /* Delete button style */
 .close {
   position: absolute;
+  cursor: pointer;
   right: 0;
   top: 0;
-  padding: 5px 10px
-}
-
-.close:hover {
-  background-color: #AA98A9;
-  color: black;
+  padding: 12px 16px 12px 16px;
 }
 
 /* Header style */
@@ -73,6 +63,7 @@ input {
   width: 15%;
   background: #E0B0FF;
   color: black;
+  cursor: pointer;
   float: right;
   text-align: center;
   font-size: 15px;
