@@ -58,3 +58,9 @@ function newElement() {
     }
   }
 }
+// Add a task when the Enter key is pressed in the input field
+taskInput.addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    addTask();
+  }
+});
