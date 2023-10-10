@@ -49,9 +49,8 @@ ul li.checked::before {
 /* Header style */
 .header {
   background-color: #E6E6FA;
-  padding: 15px 30px;
-  color: black;
-  text-align: center;
+  padding: 10px 20px;
+  color: #483248;
 }
 
 /* Clears floats */
@@ -66,15 +65,15 @@ input {
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 75%;
-  padding: 10px;
+  width: 80%;
+  padding: 5px;
   float: left;
   font-size: 15px;
 }
 
 /* Button style */
 .addBtn {
-  padding: 10px;
+  padding: 5px;
   width: 15%;
   background: #E0B0FF;
   color: black;
