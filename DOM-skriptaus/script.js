@@ -6,15 +6,15 @@ function saveToLocalStorage() {
 // Kenttään syötetyt tiedot kootaan 'Lisää' nappia painamalla sivulla yhteen listaksi
 function newElement() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
+  var inputValue = document.getElementById("syöttö").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
     alert("Kirjoita jotain kenttään.");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("lista").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("syöttö").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
