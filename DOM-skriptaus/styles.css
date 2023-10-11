@@ -1,18 +1,15 @@
-/* Header style */
 .header {
   background-color: #E6E6FA;
   padding: 10px 15px;
   color: #483248;
 }
 
-/* Clears floats */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Input style */
 input {
   width: 80%;
   padding: 5px;
@@ -20,7 +17,6 @@ input {
   font-size: 15px;
 }
 
-/* Button style */
 .addBtn {
   padding: 5px;
   width: 15%;
@@ -32,7 +28,6 @@ input {
   font-size: 15px;
 }
 
-/* List item style */
 ul li {
   background: #BDB5D5;
   list-style-type: none;
@@ -41,19 +36,16 @@ ul li {
   padding: 15px 20px;
   font-size: 18px
 
-/* makes the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* When item is clicked on, the text is crossed out */
 ul li.checked {
   text-decoration: line-through;
 }
 
-/* When item is clicked on, a checked mark appears  */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -67,7 +59,6 @@ ul li.checked::before {
   width: 5px;
 }
 
-/* Delete button style */
 .close {
   position: absolute;
   cursor: pointer;
