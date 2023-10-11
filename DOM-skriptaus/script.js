@@ -10,7 +10,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Kirjoita jotain kenttään.");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
