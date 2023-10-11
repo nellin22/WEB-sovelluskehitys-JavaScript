@@ -20,7 +20,7 @@ input {
 .addBtn {
   padding: 5px;
   width: 15%;
-  background: #E0B0FF;
+  background: #BDB5D5;
   color: black;
   cursor: pointer;
   float: right;
@@ -29,7 +29,7 @@ input {
 }
 
 ul li {
-  background: #BDB5D5;
+  background: #E6E6FA;
   list-style-type: none;
   cursor: pointer;
   position: relative;
