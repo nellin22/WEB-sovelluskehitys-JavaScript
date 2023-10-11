@@ -1,60 +1,46 @@
-//Tallentaa tiedot localstorageen
+// Saves info to local storage
 function saveToLocalStorage() {
-  localStorage.setItem("todos", JSON.stringify(todos));
+  const myNodelist = document.querySelectorAll("li");
+  myNodelist.forEach((item) => {
+    const span = document.createElement("SPAN");
+    span.className = "close";
+    span.textContent = "\u00D7";
+    item.appendChild(span);
+
+    span.onclick = function() {
+      item.style.display = "none";
+    };
   }
 
-// Kenttään syötetyt tiedot kootaan 'Lisää' nappia painamalla sivulla yhteen listaksi
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("input").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("Kirjoita jotain kenttään.");
-  } else {
-    document.getElementById("list").appendChild(li);
-  }
-  document.getElementById("input").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+  const list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
     }
-  }
+  }, false);
 }
 
-// Klikkaamalla listassa olevaa asiaa lisää check markin asian eteen
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+// Create a new to-do item when clicking the add button
+function newElement() {
+  const li = document.createElement("li");
+  const inputValue = document.getElementById("myInput").value;
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    li.textContent = inputValue;
+    document.getElementById("myUL").appendChild(li);
 
-// Tekee ruksi nappulan jokaisen listassa olevan asian oikeaan laitaan
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
+    const span = document.createElement("SPAN");
+    span.className = "close";
+    span.textContent = "\u00D7";
+    li.appendChild(span);
+
+    span.onclick = function() {
+      li.style.display = "none";
+    };
+  }
+  document.getElementById("myInput").value = "";
 }
 
-// Mahdollistaa asioiden poistamisen listasta ruksia painamalla
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+// Call saveToLocalStorage when the page loads to restore the list
+document.addEventListener("DOMContentLoaded", saveToLocalStorage);
