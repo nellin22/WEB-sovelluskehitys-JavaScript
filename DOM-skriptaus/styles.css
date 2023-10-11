@@ -35,10 +35,6 @@ ul li {
   position: relative;
   padding: 15px 20px;
   font-size: 18px
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
