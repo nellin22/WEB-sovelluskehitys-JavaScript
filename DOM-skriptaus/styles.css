@@ -35,7 +35,6 @@ ul li {
   position: relative;
   padding: 15px 20px;
   font-size: 18px
-  user-select: none;
 }
 
 ul li.checked {
