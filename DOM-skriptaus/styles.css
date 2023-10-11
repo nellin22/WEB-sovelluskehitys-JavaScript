@@ -3,20 +3,17 @@
   color: #483248;
   padding: 10px 15px;
 }
-
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
-
 input {
   font-size: 15px;
   float: left;
   width: 80%;
   padding: 5px;
 }
-
 .addBtn {
   background: #BDB5D5;
   color: #483248;
@@ -27,7 +24,6 @@ input {
   width: 15%;
   padding: 5px;
 }
-
 ul li {
   background: #E6E6FA;
   font-size: 15px
@@ -36,11 +32,9 @@ ul li {
   list-style-type: none;
   padding: 15px 20px;
 }
-
 ul li.checked {
   text-decoration: line-through;
 }
-
 ul li.checked::before {
   content: '';
   border-color: #51414F;
@@ -53,9 +47,10 @@ ul li.checked::before {
   width: 5px;
   transform: rotate(45deg);
 }
-
 .close {
   cursor: pointer;
   position: absolute;
+  top: 0;
+  right: 0;
   padding: 15px 20px;
 }
