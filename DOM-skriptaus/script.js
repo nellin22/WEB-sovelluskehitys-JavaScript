@@ -23,9 +23,7 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-    }
+    close[i].onclick = function()
   }
 }
 
@@ -54,5 +52,6 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
+    div.style.display = "none";
   }
 }
