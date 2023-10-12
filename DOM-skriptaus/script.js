@@ -15,7 +15,6 @@ function newElement(event) {
         li.appendChild(document.createTextNode(inputValue));
         document.getElementById("list").appendChild(li);
         todos.push(inputValue);
-        document.getElementById("input").onkeyup
         saveToLocalStorage();
 
         var span = document.createElement("SPAN");
