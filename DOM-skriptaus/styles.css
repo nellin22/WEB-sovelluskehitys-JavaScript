@@ -48,6 +48,7 @@ ul li.checked::before {
   transform: rotate(45deg);
 }
 .close {
+  background: #BDB5D5;
   cursor: pointer;
   position: absolute;
   top: 0;
