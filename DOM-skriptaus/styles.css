@@ -35,7 +35,6 @@ ul li {
   cursor: pointer;
   position: relative;
   list-style-type: none;
-  border-radius: 5px;
   padding: 15px 20px;
 }
 ul li.checked {
@@ -59,6 +58,5 @@ ul li.checked::before {
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 5px;
   padding: 15px 20px;
 }
