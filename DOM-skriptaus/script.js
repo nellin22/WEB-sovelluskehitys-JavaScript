@@ -11,8 +11,8 @@ function newElement() {
   li.appendChild(t);
   if (inputValue === '') {
     alert("Kirjoita jotain syöttökenttään.");
-  } if (taskText.length < 3) {
-    alert("Task is too short. Please enter a longer task.");
+  } if (inputValue.length < 2) {
+    alert("Sisältö on liian lyhyt.");
     return;
   } else {
     document.getElementById("list").appendChild(li);
@@ -61,4 +61,9 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
-
+// Näyttää virheilmoituksen ja korostaa sen syöttökentässä
+function displayError(message) {
+  taskInput.style.border = '1px solid #ff3333';
+  errorMessage.textContent = message;
+  errorMessage.style.display = 'block';
+}
