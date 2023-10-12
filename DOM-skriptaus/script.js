@@ -10,7 +10,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("Kirjoita jotain syöttökenttään");
+    alert("Kirjoita jotain syöttökenttään.");
   } else {
     document.getElementById("list").appendChild(li);
   }
