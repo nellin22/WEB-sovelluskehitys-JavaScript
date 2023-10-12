@@ -24,6 +24,10 @@ input {
   width: 15%;
   padding: 5px;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 ul li {
   background: #E6E6FA;
   font-size: 15px
