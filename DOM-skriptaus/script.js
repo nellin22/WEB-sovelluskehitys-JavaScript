@@ -11,6 +11,9 @@ function newElement() {
   li.appendChild(t);
   if (inputValue === '') {
     alert("Kirjoita jotain syöttökenttään.");
+  } if (taskText.length < 3) {
+    alert("Task is too short. Please enter a longer task.");
+    return;
   } else {
     document.getElementById("list").appendChild(li);
   }
