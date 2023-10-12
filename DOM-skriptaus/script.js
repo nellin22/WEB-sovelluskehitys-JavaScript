@@ -1,3 +1,5 @@
+var todos = [];
+
 //Tallentaa tiedot localstorageen
 function saveToLocalStorage() {
   localStorage.setItem("todos", JSON.stringify(todos));
