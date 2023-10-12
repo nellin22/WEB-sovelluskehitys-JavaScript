@@ -4,22 +4,24 @@ function saveToLocalStorage() {
   }
 
 // Kenttään syötetyt tiedot kootaan 'Lisää' nappia painamalla sivulla yhteen listaksi
-function newElement() {
+function newElement(event) {
+  event.preventDefault();
   var li = document.createElement("li");
   var inputValue = document.getElementById("input").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
   if (inputValue === '') {
-    alert("Kirjoita jotain syöttökenttään.");
-    document.getElementById("input").style.borderColor="red";
-  } if (inputValue.length < 3) {
-    alert("Sisältö on liian lyhyt.");
-    document.getElementById("input").style.borderColor="red";
-    return;
-  } else {
-    document.getElementById("list").appendChild(li);
+      alert("Kirjoita jotain syöttökenttään.");
+      document.getElementById("input").style.borderColor = "red";
+    } else if (inputValue.length < 3) {
+      alert("Sisältö on liian lyhyt.");
+      document.getElementById("input").style.borderColor = "red";
+    } else {
+      li.appendChild(document.createTextNode(inputValue));
+      document.getElementById("list").appendChild(li);
+      todos.push(inputValue);
+      saveToLocalStorage();
+    }
+    document.getElementById("input").value = "";
   }
-  document.getElementById("input").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
