@@ -11,8 +11,10 @@ function newElement() {
   li.appendChild(t);
   if (inputValue === '') {
     alert("Kirjoita jotain syöttökenttään.");
-  } if (inputValue.length < 2) {
+    document.getElementById("input").style.borderColor="red";
+  } if (inputValue.length < 3) {
     alert("Sisältö on liian lyhyt.");
+    document.getElementById("input").style.borderColor="red";
     return;
   } else {
     document.getElementById("list").appendChild(li);
@@ -60,10 +62,4 @@ for (i = 0; i < close.length; i++) {
     var div = this.parentElement;
     div.style.display = "none";
   }
-}
-// Näyttää virheilmoituksen ja korostaa sen syöttökentässä
-function displayError(message) {
-  taskInput.style.border = '1px solid #ff3333';
-  errorMessage.textContent = message;
-  errorMessage.style.display = 'block';
 }
