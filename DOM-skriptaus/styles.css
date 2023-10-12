@@ -2,6 +2,7 @@
   background-color: #E6E6FA;
   color: #483248;
   padding: 10px 15px;
+  border-style: double;
 }
 .header:after {
   content: "";
