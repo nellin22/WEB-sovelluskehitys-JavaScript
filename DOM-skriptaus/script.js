@@ -37,7 +37,6 @@ function newElement(event) {
       div.style.display = "none";
     }
   }
-}
 
 // Klikkaamalla listassa olevaa asiaa lisää check markin asian eteen
 var list = document.querySelector('ul');
