@@ -56,5 +56,4 @@ for (i = 0; i < myNodelist.length; i++) {
 
 //Tallentaa tiedot localstorageen
 function saveToLocalStorage() {
-    localStorage.setItem("todos", JSON.stringify(todos));
 }
