@@ -1,8 +1,8 @@
 .header {
   background-color: #E6E6FA;
   color: #483248;
-  padding: 10px 15px;
   border-style: double;
+  padding: 10px 15px;
 }
 .header:after {
   content: "";
@@ -34,6 +34,7 @@ ul li {
   background: #E6E6FA;
   font-size: 16px
   cursor: pointer;
+  border-style: double;
   position: relative;
   list-style-type: none;
   padding: 15px 20px;
