@@ -9,7 +9,7 @@
   clear: both;
 }
 input {
-  font-size: 15px;
+  font-size: 16px;
   width: 80%;
   padding: 5px;
 }
@@ -17,7 +17,7 @@ input {
   background: #BDB5D5;
   color: #483248;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   float: right;
   width: 18%;
@@ -29,11 +29,11 @@ ul {
 }
 ul li {
   background: #E6E6FA;
-  font-size: 15px
+  font-size: 16px
   cursor: pointer;
   position: relative;
   list-style-type: none;
-  padding: 10px 15px;
+  padding: 15px 20px;
 }
 ul li.checked {
   text-decoration: line-through;
