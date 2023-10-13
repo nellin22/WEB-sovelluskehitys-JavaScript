@@ -1,3 +1,9 @@
+h1 {
+font-family: 'Brush Script MT', cursive;
+text-align: center;
+padding: 15px;
+text-shadow: 2px 2px #dcdcdc;
+}
 .header {
   background-color: #E6E6FA;
   color: #483248;
@@ -9,9 +15,13 @@
   display: table;
   clear: both;
 }
+body {
+  background-color: #E6E6FA;
+}
 input {
   font-size: 16px;
-  width: 80%;
+  float: left;
+  width: 50%;
   border-radius: 5px;
   padding: 5px;
 }
@@ -21,10 +31,17 @@ input {
   cursor: pointer;
   font-size: 16px;
   text-align: center;
-  float: right;
-  width: 18%;
+  float: left;
+  width: 20%;
   border-radius: 5px;
   padding: 5px;
+}
+form {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background: white;
+  background-size: cover;
 }
 ul {
   margin: 0;
