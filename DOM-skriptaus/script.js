@@ -21,7 +21,8 @@ function newElement(event) {
         document.getElementById("list").appendChild(li);
         todos.push(inputValue);
         saveToLocalStorage();
-    
+
+// Tekee ruksi nappulan jokaisen listassa olevan asian oikeaan laitaan ja mahdollistaa asioiden poistamisen listasta ruksia painamalla
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("\u00D7");
         span.className = "close";
@@ -47,7 +48,9 @@ list.addEventListener('click', function(ev) {
 // Tekee ruksi nappulan jokaisen listassa olevan asian oikeaan laitaan ja mahdollistaa asioiden poistamisen listasta ruksia painamalla
 
 var myNodelist = document.getElementsByTagName("LI");
-for (i = 0; i < myNodelist.length; i++) {
-
-    };
+for (i = 0; i < myNodelist.length; i++) {    
+  span.onclick = function() {
+  var div = this.parentElement;
+  div.style.display = "none";
+  };
 }
