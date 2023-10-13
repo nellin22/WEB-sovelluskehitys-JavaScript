@@ -22,12 +22,6 @@ function newElement(event) {
         todos.push(inputValue);
         saveToLocalStorage();
 
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        li.appendChild(span);
-
         span.onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
@@ -48,7 +42,7 @@ list.addEventListener('click', function(ev) {
 var myNodelist = document.getElementsByTagName("LI");
 for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var txt = document.createTextNode("\F62A");
     span.className = "close";
     span.appendChild(txt);
     myNodelist[i].appendChild(span);
