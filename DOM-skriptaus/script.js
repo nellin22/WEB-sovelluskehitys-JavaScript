@@ -46,5 +46,8 @@ list.addEventListener('click', function(ev) {
 
 // Tekee ruksi nappulan jokaisen listassa olevan asian oikeaan laitaan ja mahdollistaa asioiden poistamisen listasta ruksia painamalla
 
+var myNodelist = document.getElementsByTagName("LI");
+for (i = 0; i < myNodelist.length; i++) {
+
     };
 }
