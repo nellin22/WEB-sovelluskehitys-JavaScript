@@ -20,7 +20,7 @@ input {
   font-size: 17px;
   width: 35%;
   border-radius: 5px;
-  margin-left: 400px;
+  margin-left: 380px;
   padding: 5px;
 }
 .addBtn {
@@ -35,7 +35,7 @@ input {
 }
 ul {
   width: 50%;
-  margin-left: 400px;
+  margin-left: 380px;
 }
 ul li {
   background: #E6E6FA;
