@@ -1,4 +1,12 @@
-DOM-skriptaus projektia varten tein ToDo -listan. Projektissa käytin HTML:ää, CSS:ää ja JavaScriptiä.
+DOM-skriptaus projektia varten tein ToDo -listan. Projektissa käytin HTML:ää, CSS:ää ja JavaScriptiä. ToDo -listalla on syöttökenttä mihin voit kirjoittaa sanoja tai lauseita. Virheellinen syöttö syöttökenttään aiheuttaa virheilmoituksen ja syöttökentän punaisen korostuksen. Virheellistä tietoa ovat liian lyhyt sana ja tyhjä syöttökenttä. Listalla pystyt merkitsemään asioita tehdyksi ja poistamaan asioita ruksia painamalla.
 
-Lähteinä käytin W3schoolsin HTML, CSS ja JAVASCRIPT tutoriaaleja. Otin myös inspiraatiota W3schoolsin How To Create a To Do List osiosta.
-Javaskriptin toimintaongelmissa käytin ChatGPT:tä, kuten kirjoitusvirheiden löytämistä varten.
+Lähteet:
+
+Projektissa käytin W3schoolsin HTML, CSS ja JAVASCRIPT tutoriaaleja.
+https://www.w3schools.com/
+
+Otin inspiraatiota W3schoolsin How To Create a To Do List osiosta.
+https://www.w3schools.com/howto/howto_js_todolist.asp
+
+Javaskriptin kirjoitus- ja syntaksivirheissä käytin ChatGPT:tä.
+https://chat.openai.com/auth/login
