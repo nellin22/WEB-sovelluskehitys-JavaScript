@@ -60,7 +60,7 @@ ul li.check::before {
   border-style: solid;
   border-width: 0 3px 3px 0;
   position: absolute;
-  top: 22px;
+  top: 24px;
   left: 10px;
   height: 10px;
   width: 5px;
