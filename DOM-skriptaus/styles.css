@@ -61,7 +61,7 @@ ul li.check::before {
   border-width: 0 3px 3px 0;
   position: absolute;
   top: 24px;
-  left: 10px;
+  left: 11px;
   height: 10px;
   width: 5px;
   transform: rotate(45deg);
