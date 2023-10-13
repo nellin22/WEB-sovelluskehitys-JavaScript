@@ -43,8 +43,8 @@ ul li {
   border: 1px solid #AA98A9;
   position: relative;
   list-style-type: none;
-  margin: 5;
-  padding: 15px 20px;
+  margin: 10px;
+  padding: 20px 30px;
 }
 ul li.checked {
   text-decoration: line-through;
@@ -55,10 +55,10 @@ ul li.checked::before {
   border-style: solid;
   border-width: 0 3px 3px 0;
   position: absolute;
-  top: 17px;
-  left: 7px;
-  height: 10px;
-  width: 5px;
+  top: 20px;
+  left: 10px;
+  height: 15px;
+  width: 10px;
   transform: rotate(45deg);
 }
 .close {
