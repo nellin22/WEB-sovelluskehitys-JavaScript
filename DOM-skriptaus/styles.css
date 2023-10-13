@@ -20,6 +20,7 @@ input {
   font-size: 17px;
   width: 50%;
   border-radius: 5px;
+  margin: 70px;
   padding: 5px;
 }
 .addBtn {
@@ -28,12 +29,14 @@ input {
   cursor: pointer;
   font-size: 17px;
   text-align: center;
-  width: 20%;
+  width: 15%;
   border-radius: 5px;
+  margin: 70px;
   padding: 5px;
 }
 ul {
-  width: 50%;
+  width: 65%;
+  margin: 70px;
 }
 ul li {
   background: #E6E6FA;
