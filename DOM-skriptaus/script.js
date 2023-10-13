@@ -28,7 +28,11 @@ function newElement(event) {
         span.className = "close";
         span.appendChild(txt);
         li.appendChild(span);
-      
+        
+        span.onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+        };
     }
     document.getElementById("input").value = "";
 }
