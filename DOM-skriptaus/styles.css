@@ -18,7 +18,7 @@ body {
 }
 input {
   font-size: 17px;
-  width: 50%;
+  width: 30%;
   border-radius: 5px;
   margin-left: 250px;
   padding: 5px;
@@ -34,7 +34,7 @@ input {
   padding: 5px;
 }
 ul {
-  width: 65%;
+  width: 45%;
   margin-left: 250px;
 }
 ul li {
