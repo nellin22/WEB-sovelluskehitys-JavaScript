@@ -54,7 +54,7 @@ ul li.checked::before {
   border-style: solid;
   border-width: 0 3px 3px 0;
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 10px;
   height: 10px;
   width: 5px;
