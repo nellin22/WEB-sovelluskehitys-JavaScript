@@ -1,5 +1,10 @@
 var todos = [];
 
+//Tallentaa tiedot localstorageen
+function saveToLocalStorage() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
 // Kenttään syötetyt tiedot kootaan 'Lisää' nappia painamalla sivulla yhteen listaksi. Virheilmoitukset tyhjästä syöttö kentästä ja liian lyhyestä sisällöstä.
 function newElement(event) {
     event.preventDefault();
@@ -52,8 +57,4 @@ for (i = 0; i < myNodelist.length; i++) {
         var div = this.parentElement;
         div.style.display = "none";
     };
-}
-
-//Tallentaa tiedot localstorageen
-function saveToLocalStorage() {
 }
