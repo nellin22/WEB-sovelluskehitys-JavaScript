@@ -34,9 +34,7 @@ function newElement(event) {
         span.appendChild(txt);
         li.appendChild(span);
     
-    // Poistaa tietueen listasta ruksi -painiketta klikkaamalla.   
-    var myNodelist = document.getElementsByTagName("LI");
-    for (i = 0; i < myNodelist.length; i++) {     
+    // Poistaa tietueen listasta ruksi -painiketta klikkaamalla.      
         span.onclick = function() {
         var div = this.parentElement;
         div.style.display = "none";
