@@ -1,5 +1,5 @@
 h1 {
-font-family: 'Brush Script MT', cursive;
+font-family: 'Lucida Handwriting Std', cursive;
 text-align: center;
 padding: 15px;
 }
@@ -20,7 +20,7 @@ input {
   font-size: 17px;
   width: 30%;
   border-radius: 5px;
-  margin-left: 250px;
+  margin-left: 300px;
   padding: 5px;
 }
 .addBtn {
@@ -35,7 +35,7 @@ input {
 }
 ul {
   width: 45%;
-  margin-left: 250px;
+  margin-left: 300px;
 }
 ul li {
   background: #E6E6FA;
