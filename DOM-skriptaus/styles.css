@@ -23,7 +23,7 @@ input {
   margin-left: 380px;
   padding: 5px;
 }
-.addBtn {
+.button {
   background: #BDB5D5;
   color: #483248;
   cursor: pointer;
@@ -48,10 +48,10 @@ ul li {
   margin-bottom: 5px;
   padding: 20px 30px;
 }
-ul li.checked {
+ul li.check {
   text-decoration: line-through;
 }
-ul li.checked::before {
+ul li.check::before {
   content: '';
   border-color: #51414F;
   border-style: solid;
