@@ -45,6 +45,7 @@ ul li {
   border-radius: 5px;
   position: relative;
   list-style-type: none;
+  margin-bottom: 5px;
   padding: 20px 30px;
 }
 ul li.checked {
