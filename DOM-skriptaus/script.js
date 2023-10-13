@@ -1,9 +1,9 @@
 // Alustaa tyhjän taulukon tietojen tallentamista varten
-var todos = [];
+var todo = [];
 
 //Tallentaa tiedot localstorageen
 function saveToLocalStorage() {
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem("todo", JSON.stringify(todo));
 }
 
 // Estää lomakkeen käyttäytymisen oletusmaisesti
@@ -26,7 +26,7 @@ function newElement(event) {
     } else {
         li.appendChild(document.createTextNode(inputValue));
         document.getElementById("list").appendChild(li);
-        todos.push(inputValue);
+        todo.push(inputValue);
         saveToLocalStorage();
 
     // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan.
@@ -59,6 +59,6 @@ for (i = 0; i < myNodelist.length; i++) {
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
     if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
+        ev.target.classList.toggle('check');
     }
 }, false);
