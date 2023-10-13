@@ -23,32 +23,30 @@ function newElement(event) {
         document.getElementById("list").appendChild(li);
         todo.push(inputValue);
 
-    // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan.
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        li.appendChild(span);
+  // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan ja poistaa tietueen listasta ruksi -painiketta klikkaamalla. 
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);    
+      span.onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      };
     
-    // Poistaa tietueen listasta ruksi -painiketta klikkaamalla.      
-        span.onclick = function() {
-          var div = this.parentElement;
-          div.style.display = "none";
-        };
+  // Liittää klikkaukset poistotoimintoon.
+      var myNodelist = document.getElementsByTagName("LI");
+      for (i = 0; i < myNodelist.length; i++) {
+      span.onclick = function() {
+        var div = this.parentElement; 
+        div.style.display = "none"; 
+      };
+    }
     
     // Tyhjentää syöttökentän kun tieto on lisätty listaan Lisää -painiketta klikkaamalla.
     }
     document.getElementById("input").value = "";
-}
-
-// Liittää klikkaukset poistotoimintoon.
-var myNodelist = document.getElementsByTagName("LI");
-for (i = 0; i < myNodelist.length; i++) {
-    span.onclick = function() {
-        var div = this.parentElement; 
-        div.style.display = "none"; 
-    };
-}
+  }
   
 // Lisää checkmarkin tietueen eteen klikkaamalla.
 var list = document.querySelector('ul');
