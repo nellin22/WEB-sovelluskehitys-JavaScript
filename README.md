@@ -1,4 +1,4 @@
-DOM-skriptaus projektia varten tein ToDo -listan. Projektissa käytin HTML:ää, CSS:ää ja JavaScriptiä. ToDo -listalla on syöttökenttä mihin voit kirjoittaa sanoja tai lauseita. Virheellinen syöttö syöttökenttään aiheuttaa virheilmoituksen ja syöttökentän punaisen korostuksen. Virheellistä tietoa ovat liian lyhyt sana ja tyhjä syöttökenttä. Listalla pystyt merkitsemään asioita tehdyksi ja poistamaan asioita ruksia painamalla.
+DOM-skriptaus projektia varten tein ToDo -listan. Projektissa käytin HTML:ää, CSS:ää ja JavaScriptiä. ToDo -listalla on syöttökenttä mihin voit kirjoittaa sanoja tai lauseita. Virheellinen syöttö syöttökenttään aiheuttaa virheilmoituksen ja syöttökentän punaisen korostuksen. Virheellistä tietoa ovat liian lyhyet sanat ja tyhjä syöttökenttä. Listalla pystyt merkitsemään asioita tehdyksi ja poistamaan asioita ruksia painamalla.
 
 Lähteet:
 
