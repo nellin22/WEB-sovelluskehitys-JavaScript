@@ -43,6 +43,7 @@ ul li {
   border: 1px solid #AA98A9;
   position: relative;
   list-style-type: none;
+  margin: 5;
   padding: 15px 20px;
 }
 ul li.checked {
@@ -52,7 +53,7 @@ ul li.checked::before {
   content: '';
   border-color: #51414F;
   border-style: solid;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   position: absolute;
   top: 17px;
   left: 7px;
