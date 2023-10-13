@@ -6,7 +6,9 @@ function saveToLocalStorage() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// Estää lomakkeen käyttäytymisen oletusmaisesti
 function newElement(event) {
+  event.preventDefault();
   
 // Luo listan ja hankkii tiedot käyttäjältä
     var li = document.createElement("li");
@@ -36,8 +38,8 @@ function newElement(event) {
     
     // Poistaa tietueen listasta ruksi -painiketta klikkaamalla.      
         span.onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
+          var div = this.parentElement;
+          div.style.display = "none";
         };
     // Tyhjentää syöttökentän kun tieto on lisätty listaan Lisää -painiketta klikkaamalla
     }
