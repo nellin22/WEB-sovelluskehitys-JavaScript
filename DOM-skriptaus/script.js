@@ -46,6 +46,15 @@ function newElement(event) {
     document.getElementById("input").value = "";
 }
 
+// Liittää klikkaukset poistotoimintoon
+var myNodelist = document.getElementsByTagName("LI");
+for (i = 0; i < myNodelist.length; i++) {
+    span.onclick = function() {
+        var div = this.parentElement; 
+        div.style.display = "none"; 
+    };
+}
+  
 // Lisää checkmarkin tietueen eteen klikkaamalla
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
