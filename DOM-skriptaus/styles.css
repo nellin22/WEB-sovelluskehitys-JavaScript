@@ -51,10 +51,10 @@ ul li {
   margin-bottom: 5px;
   padding: 20px 30px;
 }
-ul li.oikeinMerkki {
+ul li.valmis {
   text-decoration: line-through;
 }
-ul li.oikeinMerkki::before {
+ul li.valmis::before {
   content: '';
   border-color: #51414F;
   border-style: solid;
