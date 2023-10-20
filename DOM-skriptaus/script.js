@@ -25,7 +25,7 @@
       syöttökenttä.style.borderColor = "red";
 	
 // Kenttään syötetyt tiedot kootaan ja liitetään yhdeksi listaksi. Uusin tieto lisätään listan perälle. Syöttökenttä tyhjennetään seuraavaa syöttöä varten.
-	  } else {
+    } else {
       syöttökenttä.style.borderColor = "";
       const tietue = luoTietue(arvo);
       lista.appendChild(tietue);
