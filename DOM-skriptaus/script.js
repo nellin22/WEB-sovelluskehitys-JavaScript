@@ -1,7 +1,11 @@
 // Luo listan ja hankkii tiedot käyttäjältä.
   const lista = document.getElementById("lista");
   const syöttökenttä = document.getElementById("syöttö");
-    
+
+// Alustaa tyhjän taulukon tietojen tallentamista varten.
+  function newElement(event) {
+  event.preventDefault();
+
 // Luo uuden tehtävän listaan
   function luoTietue(text) {
     const lista = document.createElement("li");
@@ -12,8 +16,6 @@
   }
 
 // Antaa virheilmoitukset tyhjästä syöttökentästä ja liian lyhyestä sisällöstä. Vaihtaa syöttökentän reunat punaiseksi virheen ilmaantuessa.
-  function newElement(event) {
-    event.preventDefault();
     const arvo = syöttökenttä.value.trim();
     if (arvo === '') {
       alert("Kirjoita jotain syöttökenttään.");
