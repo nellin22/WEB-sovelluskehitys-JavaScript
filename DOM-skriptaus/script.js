@@ -1,6 +1,4 @@
 // Alustaa tyhjän taulukon tietojen tallentamista varten.
-var todo = [];
-
 function newElement(event) {
   event.preventDefault();
   
