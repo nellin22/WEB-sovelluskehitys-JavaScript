@@ -35,11 +35,11 @@ function newElement(event) {
       };
     }
   
-// Lisää oikein-merkin tietueen eteen klikkaamalla.
+// Lisää oikein-merkin tietueen eteen ja yliviivaa sen klikkaamalla.
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
     if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('oikeinMerkki');
+        ev.target.classList.toggle('valmis');
     }
 }, false);
     
