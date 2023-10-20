@@ -51,10 +51,10 @@ ul li {
   margin-bottom: 5px;
   padding: 20px 30px;
 }
-ul li.check {
+ul li.oikeinMerkki {
   text-decoration: line-through;
 }
-ul li.check::before {
+ul li.oikeinMerkki::before {
   content: '';
   border-color: #51414F;
   border-style: solid;
@@ -66,7 +66,7 @@ ul li.check::before {
   width: 5px;
   transform: rotate(45deg);
 }
-.close {
+.poista {
   background: #BDB5D5;
   cursor: pointer;
   border-radius: 5px;
