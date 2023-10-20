@@ -28,8 +28,6 @@ function newElement(event) {
       span.className = "poista";
       span.appendChild(txt);
       li.appendChild(span);
-      span.onclick = function() {
-      };
     
   // Liittää klikkaukset poistotoimintoon.
       var myNodelist = document.getElementsByTagName("LI");
