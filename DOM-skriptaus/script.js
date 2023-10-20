@@ -1,49 +1,52 @@
-// Alustaa tyhjän taulukon tietojen tallentamista varten.
-  function newElement(event) {
-  event.preventDefault();
-  
 // Luo listan ja hankkii tiedot käyttäjältä.
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("syöttö").value;
-  
-// Antaa virheilmoitukset tyhjästä syöttökentästä ja liian lyhyestä sisällöstä. Vaihtaa syöttökentän reunat punaiseksi virheen ilmaantuessa.
-  if (inputValue === '') {
-        alert("Kirjoita jotain syöttökenttään.");
-        document.getElementById("syöttö").style.borderColor = "red";
-    } else if (inputValue.length < 3) {
-        alert("Sisältö on liian lyhyt.");
-        document.getElementById("syöttö").style.borderColor = "red";
+  const lista = document.getElementById("lista");
+  const syöttökenttä = document.getElementById("syöttö");
     
-// Kenttään syötetyt tiedot kootaan ja liitetään yhdeksi listaksi. Uusin tieto lisätään listan perälle.
-    } else {
-        li.appendChild(document.createTextNode(inputValue));
-        document.getElementById("lista").appendChild(li);
+// Luo uuden tehtävän listaan
+  function luoTietue(text) {
+    const lista = document.createElement("li");
+    lista.textContent = text;
+    lista.addEventListener("click", toggleCompleted);
+    luoRuksi(lista);
+    return lista;
+  }
+
+// Antaa virheilmoitukset tyhjästä syöttökentästä ja liian lyhyestä sisällöstä. Vaihtaa syöttökentän reunat punaiseksi virheen ilmaantuessa.
+  function newElement(event) {
+    event.preventDefault();
+    const arvo = syöttökenttä.value.trim();
+    if (arvo === '') {
+      alert("Kirjoita jotain syöttökenttään.");
+      syöttökenttä.style.borderColor = "red";
+    } else if (arvo.length < 3) {
+      alert("Sisältö on liian lyhyt.");
+      syöttökenttä.style.borderColor = "red";
+	
+// Kenttään syötetyt tiedot kootaan ja liitetään yhdeksi listaksi. Uusin tieto lisätään listan perälle. Syöttökenttä tyhjennetään seuraavaa syöttöä varten.
+	  } else {
+      syöttökenttä.style.borderColor = "";
+      const tietue = luoTietue(arvo);
+      lista.appendChild(tietue);
+      syöttökenttä.value = "";
+    }
+  }
+
+// Lisää oikein-merkin tietueen eteen ja yliviivaa sen klikkaamalla.
+  function toggleCompleted(event) {
+    event.target.classList.toggle("valmis");
+  }
 
 // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan.
-     var txt = document.createTextNode("\u00D7");
-     var span = document.createElement("span");
-        span.className = "poista";
-        li.appendChild(span);
-        span.appendChild(txt);
-    
-// Poistaa tietueen listasta ruksi -painiketta klikkaamalla.
-      var myNodelist = document.getElementsByTagName("LI");
-      for (i = 0; i < myNodelist.length; i++) {
-      span.onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none"; 
-      };
-    }
-  
-// Lisää oikein-merkin tietueen eteen ja yliviivaa sen klikkaamalla.
-  var list = document.querySelector('ul');
-  list.addEventListener('click', function(ev) {
-      if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('valmis');
-      }
-  }, false);
-    
-// Tyhjentää syöttökentän kun tieto on lisätty listaan Lisää -painiketta klikkaamalla.
+  function luoRuksi(tietue) {
+    const ruksi = document.createElement("span");
+    ruksi.className = "poista";
+    ruksi.textContent = "\u00D7";
+    ruksi.addEventListener("click", poista);
+    tietue.appendChild(ruksi);
   }
-  document.getElementById("syöttö").value = "";
-}
+
+// Poistaa tietueen listasta ruksi -painiketta klikkaamalla.
+  function poista() {
+    const tehtävä = this.parentElement;
+    tehtävä.remove();
+  }
