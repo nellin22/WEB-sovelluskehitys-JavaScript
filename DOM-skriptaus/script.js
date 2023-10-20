@@ -3,8 +3,8 @@ function newElement(event) {
   event.preventDefault();
   
 // Luo listan ja hankkii tiedot käyttäjältä.
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("syöttö").value;
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("syöttö").value;
   
   // Antaa virheilmoitukset tyhjästä syöttökentästä ja liian lyhyestä sisällöstä. Vaihtaa syöttökentän reunat punaiseksi virheen ilmaantuessa.
   if (inputValue === '') {
@@ -20,11 +20,11 @@ function newElement(event) {
         document.getElementById("lista").appendChild(li);
 
   // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan ja poistaa tietueen listasta ruksi -painiketta klikkaamalla. 
-      var span = document.createElement("span");
-      var txt = document.createTextNode("\u00D7");
-      span.className = "poista";
-      span.appendChild(txt);
-      li.appendChild(span);
+     var txt = document.createTextNode("\u00D7");
+     var span = document.createElement("span");
+        span.className = "poista";
+        li.appendChild(span);
+        span.appendChild(txt);
     
   // Liittää klikkaukset poistotoimintoon.
       var myNodelist = document.getElementsByTagName("LI");
