@@ -1,8 +1,8 @@
 // Alustaa tyhjän taulukon tietojen tallentamista varten.
 var todo = [];
 
-function newElement(tapaus) {
-  tapaus.preventDefault();
+function newElement(event) {
+  event.preventDefault();
   
 // Luo listan ja hankkii tiedot käyttäjältä.
     var li = document.createElement("li");
