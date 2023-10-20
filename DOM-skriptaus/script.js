@@ -20,7 +20,6 @@ function newElement(event) {
     } else {
         li.appendChild(document.createTextNode(inputValue));
         document.getElementById("lista").appendChild(li);
-        todo.push(inputValue);
 
   // Luo ruksi -painikkeen jokaisen listassa olevan tietueen oikeaan laitaan ja poistaa tietueen listasta ruksi -painiketta klikkaamalla. 
       var span = document.createElement("span");
