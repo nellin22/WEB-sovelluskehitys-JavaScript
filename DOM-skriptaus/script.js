@@ -39,11 +39,6 @@ function newElement(tapaus) {
         div.style.display = "none"; 
       };
     }
-    
-    // Tyhjentää syöttökentän kun tieto on lisätty listaan Lisää -painiketta klikkaamalla.
-    }
-    document.getElementById("syöttö").value = "";
-  }
   
 // Lisää oikein-merkin tietueen eteen klikkaamalla.
 var list = document.querySelector('ul');
@@ -52,3 +47,8 @@ list.addEventListener('click', function(ev) {
         ev.target.classList.toggle('oikeinMerkki');
     }
 }, false);
+    
+// Tyhjentää syöttökentän kun tieto on lisätty listaan Lisää -painiketta klikkaamalla.
+  }
+  document.getElementById("syöttö").value = "";
+}
